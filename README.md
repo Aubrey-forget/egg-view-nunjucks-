@@ -40,15 +40,15 @@ module.exports = appInfo => {
         cache: true,
         // 指定使用的模板引擎
         // 当渲染时，就会根据后缀名查找使用相应的模板引擎渲染
-        // 如：await ctx.render('home.nj')
+        // 如：await ctx.render('home.html')
         mapping: {
-            '.nj': 'nunjucks'
+            '.html': 'nunjucks'
         },
         // 可以设置默认的模板引擎
         defaultViewEngine: 'nunjucks',
         // 设置默认的模板引擎后缀，设置后就可以在调用时省略
         // 如：await ctx.render('home')
-        defaultExtension: '.nj'
+        defaultExtension: '.html'
     }
     return config
 }
